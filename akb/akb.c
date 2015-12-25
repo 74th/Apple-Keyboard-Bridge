@@ -10,6 +10,7 @@
 
 #include "resource.h"
 #include <shellapi.h>
+#include <stdio.h>
 
 enum
 {
@@ -23,6 +24,7 @@ const static WORD PID_APPLE_KEYBOARD[] =
 	0x023B, /* Apple Wireless Keyboard JIS 2009 */
 	0x0255, /* Apple Wireless Keyboard US  2011 */
 	0x0257, /* Apple Wireless Keyboard JIS 2011 */
+	0x0267, /* Apple Magic Keyboard JIS 2015    */
 };
 static BOOL IsSupportedDevice(WORD vid, WORD pid)
 {
